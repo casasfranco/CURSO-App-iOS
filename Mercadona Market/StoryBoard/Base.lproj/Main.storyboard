@@ -32,8 +32,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4u-sA-DYQ">
-                                <rect key="frame" x="110" y="537" width="194" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4u-sA-DYQ">
+                                <rect key="frame" x="110" y="537" width="193" height="38"/>
                                 <color key="backgroundColor" name="NARANJA"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="L5l-i3-mpn"/>
@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-516" y="13"/>
+            <point key="canvasLocation" x="-517.39130434782612" y="12.723214285714285"/>
         </scene>
     </scenes>
     <resources>
