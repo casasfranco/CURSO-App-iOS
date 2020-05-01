@@ -3,19 +3,56 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4747F27A2451131C00AF9293 /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747F2792451131C00AF9293 /* HttpRequestBuilder.swift */; };
+		4747F27C2451137800AF9293 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747F27B2451137800AF9293 /* HttpManager.swift */; };
+		4747F27E2451145A00AF9293 /* NetworkRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747F27D2451145A00AF9293 /* NetworkRequestManager.swift */; };
+		4747F280245114AA00AF9293 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747F27F245114AA00AF9293 /* BaseRepository.swift */; };
+		4747F282245114CB00AF9293 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747F281245114CB00AF9293 /* ErrorResponse.swift */; };
+		4747F284245115DD00AF9293 /* ApiRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747F283245115DD00AF9293 /* ApiRequestBuilder.swift */; };
+		4747F286245118F200AF9293 /* ApiUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747F285245118F200AF9293 /* ApiUrls.swift */; };
+		4749EE5F2457886A00061318 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749EE5E2457886A00061318 /* LoginPresenter.swift */; };
+		4749EE6224578B3000061318 /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749EE6124578B3000061318 /* LoginWireframe.swift */; };
+		4749EE652457A65500061318 /* SessionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749EE642457A65500061318 /* SessionHelper.swift */; };
+		4749EE672457C3E100061318 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749EE662457C3E100061318 /* MainWireframe.swift */; };
+		4749EE692457C79900061318 /* NewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749EE682457C79900061318 /* NewExpenseViewController.swift */; };
+		4749EE6B2457C7A500061318 /* NewExpenseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4749EE6A2457C7A500061318 /* NewExpenseViewController.storyboard */; };
+		4749EE6D2457C90D00061318 /* NewExpensePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749EE6C2457C90D00061318 /* NewExpensePresenter.swift */; };
+		4749EE6F2457CA4800061318 /* ExpensesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4749EE6E2457CA4800061318 /* ExpensesWireframe.swift */; };
 		4789AB632447612F00952DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789AB622447612F00952DE8 /* AppDelegate.swift */; };
 		4789AB652447612F00952DE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789AB642447612F00952DE8 /* SceneDelegate.swift */; };
 		4789AB672447612F00952DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789AB662447612F00952DE8 /* ViewController.swift */; };
 		4789AB6A2447612F00952DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4789AB682447612F00952DE8 /* Main.storyboard */; };
 		4789AB6C2447613100952DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4789AB6B2447613100952DE8 /* Assets.xcassets */; };
 		4789AB6F2447613100952DE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4789AB6D2447613100952DE8 /* LaunchScreen.storyboard */; };
+		4789AB7B24476B9000952DE8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789AB7A24476B9000952DE8 /* LoginViewController.swift */; };
+		4789AB7D24476E2600952DE8 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4789AB7C24476E2600952DE8 /* LoginViewController.storyboard */; };
+		478E794124511A46003D6950 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478E794024511A46003D6950 /* AuthRepository.swift */; };
+		478E79442451E4B4003D6950 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478E79432451E4B4003D6950 /* User.swift */; };
+		478E79462451E574003D6950 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478E79452451E574003D6950 /* LoginResponse.swift */; };
+		A60A9C9C1469511C73524C8C /* Pods_Mercadona_Market.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523B44D2C6A8C58396070FFB /* Pods_Mercadona_Market.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		138617B19CFCD53A927204E1 /* Pods-Mercadona Market.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mercadona Market.release.xcconfig"; path = "Target Support Files/Pods-Mercadona Market/Pods-Mercadona Market.release.xcconfig"; sourceTree = "<group>"; };
+		4747F2792451131C00AF9293 /* HttpRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestBuilder.swift; sourceTree = "<group>"; };
+		4747F27B2451137800AF9293 /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		4747F27D2451145A00AF9293 /* NetworkRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestManager.swift; sourceTree = "<group>"; };
+		4747F27F245114AA00AF9293 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		4747F281245114CB00AF9293 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		4747F283245115DD00AF9293 /* ApiRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestBuilder.swift; sourceTree = "<group>"; };
+		4747F285245118F200AF9293 /* ApiUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUrls.swift; sourceTree = "<group>"; };
+		4749EE5E2457886A00061318 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		4749EE6124578B3000061318 /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
+		4749EE642457A65500061318 /* SessionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHelper.swift; sourceTree = "<group>"; };
+		4749EE662457C3E100061318 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
+		4749EE682457C79900061318 /* NewExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseViewController.swift; sourceTree = "<group>"; };
+		4749EE6A2457C7A500061318 /* NewExpenseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewExpenseViewController.storyboard; sourceTree = "<group>"; };
+		4749EE6C2457C90D00061318 /* NewExpensePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpensePresenter.swift; sourceTree = "<group>"; };
+		4749EE6E2457CA4800061318 /* ExpensesWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesWireframe.swift; sourceTree = "<group>"; };
 		4789AB5F2447612F00952DE8 /* Mercadona Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mercadona Market.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4789AB622447612F00952DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4789AB642447612F00952DE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +61,13 @@
 		4789AB6B2447613100952DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4789AB6E2447613100952DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4789AB702447613100952DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4789AB7A24476B9000952DE8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4789AB7C24476E2600952DE8 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		478E794024511A46003D6950 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		478E79432451E4B4003D6950 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		478E79452451E574003D6950 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		523B44D2C6A8C58396070FFB /* Pods_Mercadona_Market.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mercadona_Market.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC97658E52893416B526CEA6 /* Pods-Mercadona Market.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mercadona Market.debug.xcconfig"; path = "Target Support Files/Pods-Mercadona Market/Pods-Mercadona Market.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +75,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60A9C9C1469511C73524C8C /* Pods_Mercadona_Market.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4747F2772451130800AF9293 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4747F2782451130F00AF9293 /* Base */,
+				4747F283245115DD00AF9293 /* ApiRequestBuilder.swift */,
+				4747F285245118F200AF9293 /* ApiUrls.swift */,
+				478E79452451E574003D6950 /* LoginResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4747F2782451130F00AF9293 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4747F2792451131C00AF9293 /* HttpRequestBuilder.swift */,
+				4747F27B2451137800AF9293 /* HttpManager.swift */,
+				4747F27D2451145A00AF9293 /* NetworkRequestManager.swift */,
+				4747F27F245114AA00AF9293 /* BaseRepository.swift */,
+				4747F281245114CB00AF9293 /* ErrorResponse.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4749EE5D2457885800061318 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				4749EE5E2457886A00061318 /* LoginPresenter.swift */,
+				4749EE6C2457C90D00061318 /* NewExpensePresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		4749EE6024578B1D00061318 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				4749EE6124578B3000061318 /* LoginWireframe.swift */,
+				4749EE662457C3E100061318 /* MainWireframe.swift */,
+				4749EE6E2457CA4800061318 /* ExpensesWireframe.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		4749EE632457A64600061318 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4749EE642457A65500061318 /* SessionHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		4789AB562447612F00952DE8 = {
 			isa = PBXGroup;
 			children = (
 				4789AB612447612F00952DE8 /* Mercadona Market */,
 				4789AB602447612F00952DE8 /* Products */,
+				DA4AC367440F49AD3ECB4FBA /* Pods */,
+				D4EF7A14E791C4AF14770C3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +153,74 @@
 		4789AB612447612F00952DE8 /* Mercadona Market */ = {
 			isa = PBXGroup;
 			children = (
+				4749EE632457A64600061318 /* Helpers */,
+				4749EE6024578B1D00061318 /* WireFrame */,
+				4749EE5D2457885800061318 /* Presenters */,
+				478E79422451E4A1003D6950 /* Models */,
+				478E793F24511A33003D6950 /* Repositories */,
+				4747F2772451130800AF9293 /* Network */,
+				4789AB7624476AF700952DE8 /* ViewController */,
+				4789AB7724476B0E00952DE8 /* StoryBoard */,
 				4789AB622447612F00952DE8 /* AppDelegate.swift */,
 				4789AB642447612F00952DE8 /* SceneDelegate.swift */,
-				4789AB662447612F00952DE8 /* ViewController.swift */,
-				4789AB682447612F00952DE8 /* Main.storyboard */,
 				4789AB6B2447613100952DE8 /* Assets.xcassets */,
 				4789AB6D2447613100952DE8 /* LaunchScreen.storyboard */,
 				4789AB702447613100952DE8 /* Info.plist */,
 			);
 			path = "Mercadona Market";
+			sourceTree = "<group>";
+		};
+		4789AB7624476AF700952DE8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4789AB7A24476B9000952DE8 /* LoginViewController.swift */,
+				4789AB662447612F00952DE8 /* ViewController.swift */,
+				4749EE682457C79900061318 /* NewExpenseViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4789AB7724476B0E00952DE8 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				4789AB7C24476E2600952DE8 /* LoginViewController.storyboard */,
+				4789AB682447612F00952DE8 /* Main.storyboard */,
+				4749EE6A2457C7A500061318 /* NewExpenseViewController.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		478E793F24511A33003D6950 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				478E794024511A46003D6950 /* AuthRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		478E79422451E4A1003D6950 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				478E79432451E4B4003D6950 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D4EF7A14E791C4AF14770C3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				523B44D2C6A8C58396070FFB /* Pods_Mercadona_Market.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA4AC367440F49AD3ECB4FBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC97658E52893416B526CEA6 /* Pods-Mercadona Market.debug.xcconfig */,
+				138617B19CFCD53A927204E1 /* Pods-Mercadona Market.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4789AB732447613100952DE8 /* Build configuration list for PBXNativeTarget "Mercadona Market" */;
 			buildPhases = (
+				125B5FE2B0479D2EB704344B /* [CP] Check Pods Manifest.lock */,
 				4789AB5B2447612F00952DE8 /* Sources */,
 				4789AB5C2447612F00952DE8 /* Frameworks */,
 				4789AB5D2447612F00952DE8 /* Resources */,
+				8607129D2C371DA491915458 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4789AB6F2447613100952DE8 /* LaunchScreen.storyboard in Resources */,
+				4789AB7D24476E2600952DE8 /* LoginViewController.storyboard in Resources */,
+				4749EE6B2457C7A500061318 /* NewExpenseViewController.storyboard in Resources */,
 				4789AB6C2447613100952DE8 /* Assets.xcassets in Resources */,
 				4789AB6A2447612F00952DE8 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +293,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		125B5FE2B0479D2EB704344B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mercadona Market-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8607129D2C371DA491915458 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mercadona Market/Pods-Mercadona Market-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mercadona Market/Pods-Mercadona Market-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mercadona Market/Pods-Mercadona Market-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4789AB5B2447612F00952DE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4749EE692457C79900061318 /* NewExpenseViewController.swift in Sources */,
+				478E79442451E4B4003D6950 /* User.swift in Sources */,
+				4747F27A2451131C00AF9293 /* HttpRequestBuilder.swift in Sources */,
 				4789AB672447612F00952DE8 /* ViewController.swift in Sources */,
+				4749EE672457C3E100061318 /* MainWireframe.swift in Sources */,
+				4747F280245114AA00AF9293 /* BaseRepository.swift in Sources */,
 				4789AB632447612F00952DE8 /* AppDelegate.swift in Sources */,
+				4747F27C2451137800AF9293 /* HttpManager.swift in Sources */,
+				478E79462451E574003D6950 /* LoginResponse.swift in Sources */,
+				4749EE652457A65500061318 /* SessionHelper.swift in Sources */,
 				4789AB652447612F00952DE8 /* SceneDelegate.swift in Sources */,
+				4747F286245118F200AF9293 /* ApiUrls.swift in Sources */,
+				4749EE5F2457886A00061318 /* LoginPresenter.swift in Sources */,
+				4749EE6224578B3000061318 /* LoginWireframe.swift in Sources */,
+				4749EE6F2457CA4800061318 /* ExpensesWireframe.swift in Sources */,
+				4749EE6D2457C90D00061318 /* NewExpensePresenter.swift in Sources */,
+				4747F282245114CB00AF9293 /* ErrorResponse.swift in Sources */,
+				4789AB7B24476B9000952DE8 /* LoginViewController.swift in Sources */,
+				478E794124511A46003D6950 /* AuthRepository.swift in Sources */,
+				4747F284245115DD00AF9293 /* ApiRequestBuilder.swift in Sources */,
+				4747F27E2451145A00AF9293 /* NetworkRequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +502,13 @@
 		};
 		4789AB742447613100952DE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC97658E52893416B526CEA6 /* Pods-Mercadona Market.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 927G55VTY5;
 				INFOPLIST_FILE = "Mercadona Market/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +522,13 @@
 		};
 		4789AB752447613100952DE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138617B19CFCD53A927204E1 /* Pods-Mercadona Market.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 927G55VTY5;
 				INFOPLIST_FILE = "Mercadona Market/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

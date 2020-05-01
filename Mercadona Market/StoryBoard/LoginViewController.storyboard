@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="LMr-iF-xTb">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="2ab-Qi-iSz" customClass="LoginViewController" customModule="Mercadona_Market" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tzb-l9-npf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-grande" translatesAutoresizingMaskIntoConstraints="NO" id="G46-rE-lxQ">
+                                <rect key="frame" x="29" y="102" width="356" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="MLJ-je-uFg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MERCADONA MARKET S.A.S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPC-5u-Yvv">
+                                <rect key="frame" x="29" y="259" width="356" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="38w-Fi-Jbi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="textColor" name="VERDE"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hacemos tu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eH8-Cp-4eA">
+                                <rect key="frame" x="124" y="370" width="166" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="XFn-z8-tU7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="textColor" name="CELESTE"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vida más fácil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tb3-la-tmI">
+                                <rect key="frame" x="124" y="400" width="166" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="mJF-aS-FPp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="textColor" name="CELESTE"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUh-hr-gea">
+                                <rect key="frame" x="64" y="565" width="286" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5W-uq-0Im">
+                                <rect key="frame" x="64" y="501" width="286" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fX5-HE-kfx">
+                                <rect key="frame" x="110" y="647" width="194" height="38"/>
+                                <color key="backgroundColor" name="NARANJA"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="Rr3-qV-Nas"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <state key="normal" title="Iniciar sesión">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped" destination="2ab-Qi-iSz" eventType="touchUpInside" id="xWp-Bm-usT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="G46-rE-lxQ" firstAttribute="top" secondItem="52M-cK-Saj" secondAttribute="top" constant="58" id="2MX-Hg-877"/>
+                            <constraint firstItem="52M-cK-Saj" firstAttribute="trailing" secondItem="fX5-HE-kfx" secondAttribute="trailing" constant="110" id="4sL-cP-v0O"/>
+                            <constraint firstItem="52M-cK-Saj" firstAttribute="trailing" secondItem="eH8-Cp-4eA" secondAttribute="trailing" constant="124" id="8dV-QW-o0d"/>
+                            <constraint firstItem="G46-rE-lxQ" firstAttribute="leading" secondItem="52M-cK-Saj" secondAttribute="leading" constant="29" id="DPK-ha-Orq"/>
+                            <constraint firstItem="eH8-Cp-4eA" firstAttribute="leading" secondItem="52M-cK-Saj" secondAttribute="leading" constant="124" id="E4u-ha-jOh"/>
+                            <constraint firstItem="52M-cK-Saj" firstAttribute="trailing" secondItem="WPC-5u-Yvv" secondAttribute="trailing" constant="29" id="HDT-dh-Nbh"/>
+                            <constraint firstItem="WPC-5u-Yvv" firstAttribute="top" secondItem="G46-rE-lxQ" secondAttribute="bottom" constant="1" id="Qfa-B6-F36"/>
+                            <constraint firstItem="eH8-Cp-4eA" firstAttribute="top" secondItem="WPC-5u-Yvv" secondAttribute="bottom" constant="73" id="Z2S-SJ-iTy"/>
+                            <constraint firstItem="hUh-hr-gea" firstAttribute="leading" secondItem="52M-cK-Saj" secondAttribute="leading" constant="64" id="ZHn-Ei-aJR"/>
+                            <constraint firstItem="R5W-uq-0Im" firstAttribute="leading" secondItem="52M-cK-Saj" secondAttribute="leading" constant="64" id="ZSx-ac-kUP"/>
+                            <constraint firstItem="52M-cK-Saj" firstAttribute="trailing" secondItem="hUh-hr-gea" secondAttribute="trailing" constant="64" id="b75-oM-Xlh"/>
+                            <constraint firstItem="WPC-5u-Yvv" firstAttribute="leading" secondItem="52M-cK-Saj" secondAttribute="leading" constant="29" id="cm7-RQ-U38"/>
+                            <constraint firstItem="R5W-uq-0Im" firstAttribute="top" secondItem="tb3-la-tmI" secondAttribute="bottom" constant="73" id="edM-hs-13a"/>
+                            <constraint firstItem="52M-cK-Saj" firstAttribute="trailing" secondItem="R5W-uq-0Im" secondAttribute="trailing" constant="64" id="j5t-KX-z9z"/>
+                            <constraint firstItem="tb3-la-tmI" firstAttribute="leading" secondItem="52M-cK-Saj" secondAttribute="leading" constant="124" id="jyf-3U-w8w"/>
+                            <constraint firstItem="hUh-hr-gea" firstAttribute="top" secondItem="R5W-uq-0Im" secondAttribute="bottom" constant="30" id="og3-vC-dEM"/>
+                            <constraint firstItem="52M-cK-Saj" firstAttribute="trailing" secondItem="G46-rE-lxQ" secondAttribute="trailing" constant="29" id="swu-JR-p1E"/>
+                            <constraint firstItem="52M-cK-Saj" firstAttribute="trailing" secondItem="tb3-la-tmI" secondAttribute="trailing" constant="124" id="uE9-WH-o9S"/>
+                            <constraint firstItem="fX5-HE-kfx" firstAttribute="top" secondItem="hUh-hr-gea" secondAttribute="bottom" constant="48" id="uc9-WC-6P9"/>
+                            <constraint firstItem="fX5-HE-kfx" firstAttribute="leading" secondItem="52M-cK-Saj" secondAttribute="leading" constant="110" id="y3N-ZS-jSK"/>
+                            <constraint firstItem="tb3-la-tmI" firstAttribute="top" secondItem="eH8-Cp-4eA" secondAttribute="bottom" constant="2" id="zlV-sy-peu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="52M-cK-Saj"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="fX5-HE-kfx" id="B7M-bt-0Fc"/>
+                        <outlet property="passwordTextField" destination="hUh-hr-gea" id="WYs-aR-sfj"/>
+                        <outlet property="usernameTextField" destination="R5W-uq-0Im" id="WEQ-qH-ai9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvF-Ve-ZN5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo-grande" width="335" height="174"/>
+        <namedColor name="CELESTE">
+            <color red="0.24300000071525574" green="0.65100002288818359" blue="0.86699998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NARANJA">
+            <color red="0.98799997568130493" green="0.6940000057220459" blue="0.082000002264976501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VERDE">
+            <color red="0.57599997520446777" green="0.7839999794960022" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
