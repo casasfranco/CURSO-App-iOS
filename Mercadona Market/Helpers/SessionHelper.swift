@@ -25,4 +25,9 @@ class SessionHelper {
             return nil
         }
     }
+    
+    func saveLogout(user: String?) {
+        defaults.set(user, forKey: key)
+    }
+    
 }

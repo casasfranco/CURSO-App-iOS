@@ -15,7 +15,8 @@ class MainWireframe {
         let user = SessionHelper().getUser()
         
         if user != nil {    // navegar a otra pantalla en caso de no ser nil
-            ExpensesWireframe.navigateToNewExpense(from: context)
+            ExpensesWireframe.navigateToMyExpense(from: context)
+//            ExpensesWireframe.navigateToNewExpense(from: context)
         } else {
             LoginWireframe.navigateToLogin(from: context)
         }

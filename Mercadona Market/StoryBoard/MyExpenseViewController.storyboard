@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--My Expense View Controller-->
+        <scene sceneID="TTk-sO-cBG">
+            <objects>
+                <viewController storyboardIdentifier="MyExpenseViewController" id="4ZQ-w6-XXU" customClass="MyExpenseViewController" customModule="Mercadona_Market" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="39U-Wa-gM7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyt-Hu-0o6">
+                                <rect key="frame" x="162" y="435" width="90" height="36"/>
+                                <color key="backgroundColor" name="NARANJA"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="qDe-vs-m84"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutTapped" destination="4ZQ-w6-XXU" eventType="touchUpInside" id="rE8-DX-R0a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Nyt-Hu-0o6" firstAttribute="centerY" secondItem="c3H-fH-cOV" secondAttribute="centerY" id="5Gy-qn-4qQ"/>
+                            <constraint firstItem="Nyt-Hu-0o6" firstAttribute="centerX" secondItem="c3H-fH-cOV" secondAttribute="centerX" id="6vm-mx-H6N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c3H-fH-cOV"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Nyt-Hu-0o6" id="bX0-e0-epw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OBZ-UP-s6w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-137.68115942028987" y="-153.34821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="NARANJA">
+            <color red="0.98799997568130493" green="0.6940000057220459" blue="0.082000002264976501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
