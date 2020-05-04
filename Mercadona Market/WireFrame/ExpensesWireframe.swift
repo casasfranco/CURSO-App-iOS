@@ -17,7 +17,7 @@ class ExpensesWireframe {
         let presenter = MyExpensePresenter(view: myExpenseVC)
         myExpenseVC.presenter = presenter
         
-        context.navigationController?.pushViewController(myExpenseVC, animated: true)
+        context.navigationController?.setViewControllers([myExpenseVC], animated: true)     //Cargo en la pila (comienza aqui)
     }
     
     

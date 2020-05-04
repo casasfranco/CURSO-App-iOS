@@ -33,6 +33,9 @@
 		478E794124511A46003D6950 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478E794024511A46003D6950 /* AuthRepository.swift */; };
 		478E79442451E4B4003D6950 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478E79432451E4B4003D6950 /* User.swift */; };
 		478E79462451E574003D6950 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478E79452451E574003D6950 /* LoginResponse.swift */; };
+		47D266E02460C044006BC44F /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D266DF2460C044006BC44F /* SelectorViewController.swift */; };
+		47D266E22460C2F7006BC44F /* SelectorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D266E12460C2F7006BC44F /* SelectorViewController.storyboard */; };
+		47D266E42460C342006BC44F /* SelectorWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D266E32460C342006BC44F /* SelectorWireframe.swift */; };
 		47D97CC7245CDBF800DD9DE2 /* MyExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D97CC6245CDBF800DD9DE2 /* MyExpenseViewController.swift */; };
 		47D97CCB245CDC5C00DD9DE2 /* MyExpenseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D97CCA245CDC5C00DD9DE2 /* MyExpenseViewController.storyboard */; };
 		47D97CCD245CDD2200DD9DE2 /* MyExpensePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D97CCC245CDD2200DD9DE2 /* MyExpensePresenter.swift */; };
@@ -69,6 +72,9 @@
 		478E794024511A46003D6950 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		478E79432451E4B4003D6950 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		478E79452451E574003D6950 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		47D266DF2460C044006BC44F /* SelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewController.swift; sourceTree = "<group>"; };
+		47D266E12460C2F7006BC44F /* SelectorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectorViewController.storyboard; sourceTree = "<group>"; };
+		47D266E32460C342006BC44F /* SelectorWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorWireframe.swift; sourceTree = "<group>"; };
 		47D97CC6245CDBF800DD9DE2 /* MyExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExpenseViewController.swift; sourceTree = "<group>"; };
 		47D97CCA245CDC5C00DD9DE2 /* MyExpenseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyExpenseViewController.storyboard; sourceTree = "<group>"; };
 		47D97CCC245CDD2200DD9DE2 /* MyExpensePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExpensePresenter.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 				4749EE6124578B3000061318 /* LoginWireframe.swift */,
 				4749EE662457C3E100061318 /* MainWireframe.swift */,
 				4749EE6E2457CA4800061318 /* ExpensesWireframe.swift */,
+				47D266E32460C342006BC44F /* SelectorWireframe.swift */,
 			);
 			path = WireFrame;
 			sourceTree = "<group>";
@@ -184,6 +191,7 @@
 				4789AB662447612F00952DE8 /* ViewController.swift */,
 				4749EE682457C79900061318 /* NewExpenseViewController.swift */,
 				47D97CC6245CDBF800DD9DE2 /* MyExpenseViewController.swift */,
+				47D266DF2460C044006BC44F /* SelectorViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 				4789AB682447612F00952DE8 /* Main.storyboard */,
 				4749EE6A2457C7A500061318 /* NewExpenseViewController.storyboard */,
 				47D97CCA245CDC5C00DD9DE2 /* MyExpenseViewController.storyboard */,
+				47D266E12460C2F7006BC44F /* SelectorViewController.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -298,6 +307,7 @@
 				4789AB6C2447613100952DE8 /* Assets.xcassets in Resources */,
 				47D97CCB245CDC5C00DD9DE2 /* MyExpenseViewController.storyboard in Resources */,
 				4789AB6A2447612F00952DE8 /* Main.storyboard in Resources */,
+				47D266E22460C2F7006BC44F /* SelectorViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +367,7 @@
 				4789AB672447612F00952DE8 /* ViewController.swift in Sources */,
 				4749EE672457C3E100061318 /* MainWireframe.swift in Sources */,
 				4747F280245114AA00AF9293 /* BaseRepository.swift in Sources */,
+				47D266E02460C044006BC44F /* SelectorViewController.swift in Sources */,
 				4789AB632447612F00952DE8 /* AppDelegate.swift in Sources */,
 				4747F27C2451137800AF9293 /* HttpManager.swift in Sources */,
 				478E79462451E574003D6950 /* LoginResponse.swift in Sources */,
@@ -366,6 +377,7 @@
 				4749EE5F2457886A00061318 /* LoginPresenter.swift in Sources */,
 				4749EE6224578B3000061318 /* LoginWireframe.swift in Sources */,
 				4749EE6F2457CA4800061318 /* ExpensesWireframe.swift in Sources */,
+				47D266E42460C342006BC44F /* SelectorWireframe.swift in Sources */,
 				47D97CC7245CDBF800DD9DE2 /* MyExpenseViewController.swift in Sources */,
 				4749EE6D2457C90D00061318 /* NewExpensePresenter.swift in Sources */,
 				4747F282245114CB00AF9293 /* ErrorResponse.swift in Sources */,

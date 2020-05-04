@@ -11,6 +11,7 @@ import Foundation
 
 protocol MyExpenseViewProtocol: class {
     func showLogoutSuccess()
+    func navivigateToNewExpense()
 }
 
 class MyExpensePresenter {
@@ -25,11 +26,16 @@ class MyExpensePresenter {
 }
 
 extension MyExpensePresenter: MyExpensePresenterProtocol {
+    
     func logout() {
         print(user?.authToken)
         print(user?.name)
         SessionHelper().saveLogout(user: nil)
         view?.showLogoutSuccess()
+    }
+    
+    func newExpenseTapped() {
+        view?.navivigateToNewExpense()
     }
     
     

@@ -30,16 +30,30 @@
                                     <action selector="logoutTapped" destination="4ZQ-w6-XXU" eventType="touchUpInside" id="rE8-DX-R0a"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uoz-sz-MI8">
+                                <rect key="frame" x="50" y="571" width="314" height="30"/>
+                                <color key="backgroundColor" name="VERDE"/>
+                                <state key="normal" title="New Expense">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="newExpenseTapped" destination="4ZQ-w6-XXU" eventType="touchUpInside" id="Fz2-rO-a1M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Uoz-sz-MI8" firstAttribute="leading" secondItem="c3H-fH-cOV" secondAttribute="leading" constant="50" id="1fu-cr-ALi"/>
+                            <constraint firstItem="c3H-fH-cOV" firstAttribute="trailing" secondItem="Uoz-sz-MI8" secondAttribute="trailing" constant="50" id="506-Qj-W4b"/>
                             <constraint firstItem="Nyt-Hu-0o6" firstAttribute="centerY" secondItem="c3H-fH-cOV" secondAttribute="centerY" id="5Gy-qn-4qQ"/>
                             <constraint firstItem="Nyt-Hu-0o6" firstAttribute="centerX" secondItem="c3H-fH-cOV" secondAttribute="centerX" id="6vm-mx-H6N"/>
+                            <constraint firstItem="Uoz-sz-MI8" firstAttribute="top" secondItem="Nyt-Hu-0o6" secondAttribute="bottom" constant="100" id="jEr-4n-Ozt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c3H-fH-cOV"/>
                     </view>
                     <connections>
                         <outlet property="button" destination="Nyt-Hu-0o6" id="bX0-e0-epw"/>
+                        <outlet property="buttonNewExpenses" destination="Uoz-sz-MI8" id="nYp-10-6LD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBZ-UP-s6w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -50,6 +64,9 @@
     <resources>
         <namedColor name="NARANJA">
             <color red="0.98799997568130493" green="0.6940000057220459" blue="0.082000002264976501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VERDE">
+            <color red="0.57599997520446777" green="0.7839999794960022" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

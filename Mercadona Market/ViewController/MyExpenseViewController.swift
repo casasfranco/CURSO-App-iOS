@@ -11,12 +11,15 @@ import UIKit
 
 protocol MyExpensePresenterProtocol: class {
     func logout()
+    func newExpenseTapped()
 }
 
 class MyExpenseViewController: UIViewController {
     var presenter: MyExpensePresenterProtocol?
     
     @IBOutlet private var button: UIButton?
+    @IBOutlet private var buttonNewExpenses: UIButton?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +30,16 @@ class MyExpenseViewController: UIViewController {
         presenter?.logout()
     }
     
+    @IBAction private func newExpenseTapped() {
+        print("newExpenseTapped")
+        presenter?.newExpenseTapped()
+    }
+    
 }
 
 
 extension MyExpenseViewController: MyExpenseViewProtocol {
+    
     //Cerrar Sesion - Luego mover al boton
     func showLogoutSuccess() {
         MainWireframe.navigateToHomeScreen(from: self) //Envio al frame para iniciar sesión
@@ -38,5 +47,9 @@ extension MyExpenseViewController: MyExpenseViewProtocol {
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
         }
+    
+    func navivigateToNewExpense() {
+        ExpensesWireframe.navigateToNewExpense(from: self)
+    }
     
 }
