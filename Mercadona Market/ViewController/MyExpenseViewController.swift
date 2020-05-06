@@ -23,6 +23,7 @@ class MyExpenseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
     }
 
     @IBAction private func logoutTapped() {
@@ -35,7 +36,15 @@ class MyExpenseViewController: UIViewController {
         presenter?.newExpenseTapped()
     }
     
+    
+    private func setupUI() {
+        button?.layer.cornerRadius = 8
+        buttonNewExpenses?.layer.cornerRadius = 8
+    }
+    
 }
+
+
 
 
 extension MyExpenseViewController: MyExpenseViewProtocol {

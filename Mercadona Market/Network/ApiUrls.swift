@@ -11,4 +11,5 @@ import Foundation
 class ApiUrls {
     static let login = "users/login"
 //    static let expenses = "expenses"
+    static let accounts = "accounts"
 }

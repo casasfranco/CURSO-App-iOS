@@ -39,6 +39,12 @@
 		47D97CC7245CDBF800DD9DE2 /* MyExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D97CC6245CDBF800DD9DE2 /* MyExpenseViewController.swift */; };
 		47D97CCB245CDC5C00DD9DE2 /* MyExpenseViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D97CCA245CDC5C00DD9DE2 /* MyExpenseViewController.storyboard */; };
 		47D97CCD245CDD2200DD9DE2 /* MyExpensePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D97CCC245CDD2200DD9DE2 /* MyExpensePresenter.swift */; };
+		47ED3A322462637F00454E26 /* SelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED3A312462637F00454E26 /* SelectorTableViewCell.swift */; };
+		47ED3A342462643700454E26 /* SelectorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47ED3A332462643700454E26 /* SelectorTableViewCell.xib */; };
+		47ED3A362462E99100454E26 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED3A352462E99100454E26 /* Account.swift */; };
+		47ED3A382462E9FA00454E26 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED3A372462E9FA00454E26 /* Currency.swift */; };
+		47ED3A3A2462EAE100454E26 /* AccountsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED3A392462EAE100454E26 /* AccountsRepository.swift */; };
+		47ED3A3C2462F6B400454E26 /* AccountSelectorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47ED3A3B2462F6B400454E26 /* AccountSelectorPresenter.swift */; };
 		A60A9C9C1469511C73524C8C /* Pods_Mercadona_Market.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523B44D2C6A8C58396070FFB /* Pods_Mercadona_Market.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +84,12 @@
 		47D97CC6245CDBF800DD9DE2 /* MyExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExpenseViewController.swift; sourceTree = "<group>"; };
 		47D97CCA245CDC5C00DD9DE2 /* MyExpenseViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyExpenseViewController.storyboard; sourceTree = "<group>"; };
 		47D97CCC245CDD2200DD9DE2 /* MyExpensePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyExpensePresenter.swift; sourceTree = "<group>"; };
+		47ED3A312462637F00454E26 /* SelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorTableViewCell.swift; sourceTree = "<group>"; };
+		47ED3A332462643700454E26 /* SelectorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectorTableViewCell.xib; sourceTree = "<group>"; };
+		47ED3A352462E99100454E26 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		47ED3A372462E9FA00454E26 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		47ED3A392462EAE100454E26 /* AccountsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsRepository.swift; sourceTree = "<group>"; };
+		47ED3A3B2462F6B400454E26 /* AccountSelectorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSelectorPresenter.swift; sourceTree = "<group>"; };
 		523B44D2C6A8C58396070FFB /* Pods_Mercadona_Market.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mercadona_Market.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC97658E52893416B526CEA6 /* Pods-Mercadona Market.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mercadona Market.debug.xcconfig"; path = "Target Support Files/Pods-Mercadona Market/Pods-Mercadona Market.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +135,7 @@
 				4749EE5E2457886A00061318 /* LoginPresenter.swift */,
 				4749EE6C2457C90D00061318 /* NewExpensePresenter.swift */,
 				47D97CCC245CDD2200DD9DE2 /* MyExpensePresenter.swift */,
+				47ED3A3B2462F6B400454E26 /* AccountSelectorPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -167,6 +180,7 @@
 		4789AB612447612F00952DE8 /* Mercadona Market */ = {
 			isa = PBXGroup;
 			children = (
+				47ED3A302462635B00454E26 /* Views */,
 				4749EE632457A64600061318 /* Helpers */,
 				4749EE6024578B1D00061318 /* WireFrame */,
 				4749EE5D2457885800061318 /* Presenters */,
@@ -212,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				478E794024511A46003D6950 /* AuthRepository.swift */,
+				47ED3A392462EAE100454E26 /* AccountsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -220,8 +235,19 @@
 			isa = PBXGroup;
 			children = (
 				478E79432451E4B4003D6950 /* User.swift */,
+				47ED3A352462E99100454E26 /* Account.swift */,
+				47ED3A372462E9FA00454E26 /* Currency.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		47ED3A302462635B00454E26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47ED3A312462637F00454E26 /* SelectorTableViewCell.swift */,
+				47ED3A332462643700454E26 /* SelectorTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D4EF7A14E791C4AF14770C3D /* Frameworks */ = {
@@ -303,6 +329,7 @@
 			files = (
 				4789AB6F2447613100952DE8 /* LaunchScreen.storyboard in Resources */,
 				4789AB7D24476E2600952DE8 /* LoginViewController.storyboard in Resources */,
+				47ED3A342462643700454E26 /* SelectorTableViewCell.xib in Resources */,
 				4749EE6B2457C7A500061318 /* NewExpenseViewController.storyboard in Resources */,
 				4789AB6C2447613100952DE8 /* Assets.xcassets in Resources */,
 				47D97CCB245CDC5C00DD9DE2 /* MyExpenseViewController.storyboard in Resources */,
@@ -372,12 +399,17 @@
 				4747F27C2451137800AF9293 /* HttpManager.swift in Sources */,
 				478E79462451E574003D6950 /* LoginResponse.swift in Sources */,
 				4749EE652457A65500061318 /* SessionHelper.swift in Sources */,
+				47ED3A382462E9FA00454E26 /* Currency.swift in Sources */,
+				47ED3A362462E99100454E26 /* Account.swift in Sources */,
 				4789AB652447612F00952DE8 /* SceneDelegate.swift in Sources */,
 				4747F286245118F200AF9293 /* ApiUrls.swift in Sources */,
 				4749EE5F2457886A00061318 /* LoginPresenter.swift in Sources */,
+				47ED3A3A2462EAE100454E26 /* AccountsRepository.swift in Sources */,
 				4749EE6224578B3000061318 /* LoginWireframe.swift in Sources */,
+				47ED3A3C2462F6B400454E26 /* AccountSelectorPresenter.swift in Sources */,
 				4749EE6F2457CA4800061318 /* ExpensesWireframe.swift in Sources */,
 				47D266E42460C342006BC44F /* SelectorWireframe.swift in Sources */,
+				47ED3A322462637F00454E26 /* SelectorTableViewCell.swift in Sources */,
 				47D97CC7245CDBF800DD9DE2 /* MyExpenseViewController.swift in Sources */,
 				4749EE6D2457C90D00061318 /* NewExpensePresenter.swift in Sources */,
 				4747F282245114CB00AF9293 /* ErrorResponse.swift in Sources */,
