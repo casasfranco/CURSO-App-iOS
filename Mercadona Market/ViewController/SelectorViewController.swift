@@ -24,16 +24,12 @@ class SelectorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
         
         tableView?.register(UINib(nibName: "SelectorTableViewCell", bundle: .main), forCellReuseIdentifier: "cell")
         tableView?.dataSource = self
         tableView?.delegate = self
     }
     
-    private func setupUI() {
-        tableView?.rowHeight = 100
-    }
     
     override func viewWillAppear(_ animated: Bool) {    //Cuando la vista se está por mostrar
         super.viewWillAppear(animated)
@@ -50,7 +46,7 @@ extension SelectorViewController: UITableViewDataSource {
         let row = indexPath.row
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? SelectorTableViewCell {
-            //cell.set(text: elements[row])
+            cell.set(text: elements[row])
             return cell
         } else {
             return UITableViewCell()
@@ -73,9 +69,29 @@ extension SelectorViewController: AccountSelectorViewProtocol {
         
         elements = names
         tableView?.reloadData()
-        
-        
     }
-    
-    
+}
+
+extension SelectorViewController: CategorySelectorViewProtocol {
+
+    func show(categories: [Category]) {
+        let names = categories.map { (category) -> String in
+            return (category.name ?? "")
+        }
+
+        elements = names
+        tableView?.reloadData()
+    }
+}
+
+extension SelectorViewController: ProviderSelectorViewProtocol {
+
+    func show(providers: [Provider]) {
+        let names = providers.map { (provider) -> String in
+            return (provider.name ?? "")
+        }
+
+        elements = names
+        tableView?.reloadData()
+    }
 }

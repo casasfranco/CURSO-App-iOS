@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47028BA824631BBF00056499 /* CategorySelectorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47028BA724631BBF00056499 /* CategorySelectorPresenter.swift */; };
+		47028BAA24631BD900056499 /* ProviderSelectorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47028BA924631BD900056499 /* ProviderSelectorPresenter.swift */; };
+		47028BAC24631C4800056499 /* CategoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47028BAB24631C4800056499 /* CategoriesRepository.swift */; };
+		47028BAE24631C6200056499 /* ProvidersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47028BAD24631C6200056499 /* ProvidersRepository.swift */; };
+		47028BB024631EEF00056499 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47028BAF24631EEF00056499 /* Category.swift */; };
+		47028BB224631F1B00056499 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47028BB124631F1B00056499 /* Provider.swift */; };
 		4747F27A2451131C00AF9293 /* HttpRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747F2792451131C00AF9293 /* HttpRequestBuilder.swift */; };
 		4747F27C2451137800AF9293 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747F27B2451137800AF9293 /* HttpManager.swift */; };
 		4747F27E2451145A00AF9293 /* NetworkRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4747F27D2451145A00AF9293 /* NetworkRequestManager.swift */; };
@@ -50,6 +56,12 @@
 
 /* Begin PBXFileReference section */
 		138617B19CFCD53A927204E1 /* Pods-Mercadona Market.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mercadona Market.release.xcconfig"; path = "Target Support Files/Pods-Mercadona Market/Pods-Mercadona Market.release.xcconfig"; sourceTree = "<group>"; };
+		47028BA724631BBF00056499 /* CategorySelectorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectorPresenter.swift; sourceTree = "<group>"; };
+		47028BA924631BD900056499 /* ProviderSelectorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderSelectorPresenter.swift; sourceTree = "<group>"; };
+		47028BAB24631C4800056499 /* CategoriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRepository.swift; sourceTree = "<group>"; };
+		47028BAD24631C6200056499 /* ProvidersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersRepository.swift; sourceTree = "<group>"; };
+		47028BAF24631EEF00056499 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		47028BB124631F1B00056499 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		4747F2792451131C00AF9293 /* HttpRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestBuilder.swift; sourceTree = "<group>"; };
 		4747F27B2451137800AF9293 /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		4747F27D2451145A00AF9293 /* NetworkRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestManager.swift; sourceTree = "<group>"; };
@@ -136,6 +148,8 @@
 				4749EE6C2457C90D00061318 /* NewExpensePresenter.swift */,
 				47D97CCC245CDD2200DD9DE2 /* MyExpensePresenter.swift */,
 				47ED3A3B2462F6B400454E26 /* AccountSelectorPresenter.swift */,
+				47028BA724631BBF00056499 /* CategorySelectorPresenter.swift */,
+				47028BA924631BD900056499 /* ProviderSelectorPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -180,20 +194,20 @@
 		4789AB612447612F00952DE8 /* Mercadona Market */ = {
 			isa = PBXGroup;
 			children = (
-				47ED3A302462635B00454E26 /* Views */,
-				4749EE632457A64600061318 /* Helpers */,
-				4749EE6024578B1D00061318 /* WireFrame */,
-				4749EE5D2457885800061318 /* Presenters */,
-				478E79422451E4A1003D6950 /* Models */,
-				478E793F24511A33003D6950 /* Repositories */,
-				4747F2772451130800AF9293 /* Network */,
-				4789AB7624476AF700952DE8 /* ViewController */,
-				4789AB7724476B0E00952DE8 /* StoryBoard */,
 				4789AB622447612F00952DE8 /* AppDelegate.swift */,
-				4789AB642447612F00952DE8 /* SceneDelegate.swift */,
 				4789AB6B2447613100952DE8 /* Assets.xcassets */,
-				4789AB6D2447613100952DE8 /* LaunchScreen.storyboard */,
+				4749EE632457A64600061318 /* Helpers */,
 				4789AB702447613100952DE8 /* Info.plist */,
+				4789AB6D2447613100952DE8 /* LaunchScreen.storyboard */,
+				478E79422451E4A1003D6950 /* Models */,
+				4747F2772451130800AF9293 /* Network */,
+				4749EE5D2457885800061318 /* Presenters */,
+				478E793F24511A33003D6950 /* Repositories */,
+				4789AB642447612F00952DE8 /* SceneDelegate.swift */,
+				4789AB7724476B0E00952DE8 /* StoryBoard */,
+				4789AB7624476AF700952DE8 /* ViewController */,
+				47ED3A302462635B00454E26 /* Views */,
+				4749EE6024578B1D00061318 /* WireFrame */,
 			);
 			path = "Mercadona Market";
 			sourceTree = "<group>";
@@ -227,6 +241,8 @@
 			children = (
 				478E794024511A46003D6950 /* AuthRepository.swift */,
 				47ED3A392462EAE100454E26 /* AccountsRepository.swift */,
+				47028BAB24631C4800056499 /* CategoriesRepository.swift */,
+				47028BAD24631C6200056499 /* ProvidersRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -237,6 +253,8 @@
 				478E79432451E4B4003D6950 /* User.swift */,
 				47ED3A352462E99100454E26 /* Account.swift */,
 				47ED3A372462E9FA00454E26 /* Currency.swift */,
+				47028BAF24631EEF00056499 /* Category.swift */,
+				47028BB124631F1B00056499 /* Provider.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -391,10 +409,14 @@
 				478E79442451E4B4003D6950 /* User.swift in Sources */,
 				4747F27A2451131C00AF9293 /* HttpRequestBuilder.swift in Sources */,
 				47D97CCD245CDD2200DD9DE2 /* MyExpensePresenter.swift in Sources */,
+				47028BB224631F1B00056499 /* Provider.swift in Sources */,
 				4789AB672447612F00952DE8 /* ViewController.swift in Sources */,
 				4749EE672457C3E100061318 /* MainWireframe.swift in Sources */,
+				47028BB024631EEF00056499 /* Category.swift in Sources */,
 				4747F280245114AA00AF9293 /* BaseRepository.swift in Sources */,
 				47D266E02460C044006BC44F /* SelectorViewController.swift in Sources */,
+				47028BAE24631C6200056499 /* ProvidersRepository.swift in Sources */,
+				47028BA824631BBF00056499 /* CategorySelectorPresenter.swift in Sources */,
 				4789AB632447612F00952DE8 /* AppDelegate.swift in Sources */,
 				4747F27C2451137800AF9293 /* HttpManager.swift in Sources */,
 				478E79462451E574003D6950 /* LoginResponse.swift in Sources */,
@@ -410,12 +432,14 @@
 				4749EE6F2457CA4800061318 /* ExpensesWireframe.swift in Sources */,
 				47D266E42460C342006BC44F /* SelectorWireframe.swift in Sources */,
 				47ED3A322462637F00454E26 /* SelectorTableViewCell.swift in Sources */,
+				47028BAC24631C4800056499 /* CategoriesRepository.swift in Sources */,
 				47D97CC7245CDBF800DD9DE2 /* MyExpenseViewController.swift in Sources */,
 				4749EE6D2457C90D00061318 /* NewExpensePresenter.swift in Sources */,
 				4747F282245114CB00AF9293 /* ErrorResponse.swift in Sources */,
 				4789AB7B24476B9000952DE8 /* LoginViewController.swift in Sources */,
 				478E794124511A46003D6950 /* AuthRepository.swift in Sources */,
 				4747F284245115DD00AF9293 /* ApiRequestBuilder.swift in Sources */,
+				47028BAA24631BD900056499 /* ProviderSelectorPresenter.swift in Sources */,
 				4747F27E2451145A00AF9293 /* NetworkRequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

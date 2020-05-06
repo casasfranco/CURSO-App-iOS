@@ -12,4 +12,6 @@ class ApiUrls {
     static let login = "users/login"
 //    static let expenses = "expenses"
     static let accounts = "accounts"
+    static let categories = "expenseCategories"
+    static let providers = "providers"
 }

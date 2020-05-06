@@ -16,6 +16,7 @@ class AccountSelectorPresenter {
     
     let repository = AccountsRepository()
     var accounts: [Account] = []
+    var result: Bool = false
     
     weak var view: AccountSelectorViewProtocol?
     
@@ -27,9 +28,14 @@ class AccountSelectorPresenter {
 
 extension AccountSelectorPresenter: SelectorPresenterProtocol {
     func fetchData() {
-        repository.getAccounts { (accounts, error) in
-            self.accounts = accounts ?? []
-            self.view?.show(accounts: accounts ?? [])
+        repository.getAccounts { (result,accounts, error) in
+            if (result) {
+                self.accounts = accounts ?? []
+                self.view?.show(accounts: accounts ?? [])
+            } else {
+                print("Error getAccounts -> case failure")
+            }
+            
         }
     }
     

@@ -1,5 +1,5 @@
 //
-//  AccountsRepository.swift
+//  CategoriesRepository.swift
 //  Mercadona Market
 //
 //  Created by Franco Casas on 06/05/2020.
@@ -8,14 +8,12 @@
 
 import Foundation
 import Alamofire
-import ObjectMapper
 import AlamofireObjectMapper
-
-class AccountsRepository: BaseRepository {
+ 
+class CategoriesRepository: BaseRepository {
     
-    
-    func getAccounts(completion: @escaping (_ success: Bool, _ accounts: [Account], _ error: String?) -> Void) {
-        requestBuilder.accounts().responseArray { (response: DataResponse<[Account]>) in
+    func getCategories(completion: @escaping (_ success: Bool, _ categories: [Category], _ error: String?) -> Void) {
+        requestBuilder.categories().responseArray { (response: DataResponse<[Category]>) in
             switch response.result {
             case .success:
                 completion(true, response.value ?? [], nil)

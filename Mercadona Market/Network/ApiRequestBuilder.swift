@@ -27,4 +27,17 @@ class ApiRequestBuilder: HttpRequestBuilder {
         return buildRequest(path: ApiUrls.accounts, method: .get)
     }
     
+    func categories() -> DataRequest {
+        return buildRequest(path: ApiUrls.categories, method: .get)
+    }
+    
+    func providers(categoryId: Int) -> DataRequest {
+        let params = [
+            "categoryId": categoryId
+        ]
+        return buildRequest(path: ApiUrls.providers, method: .get, params: params)
+    }
+
+
+    
 }
