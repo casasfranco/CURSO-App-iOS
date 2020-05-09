@@ -8,6 +8,10 @@
 
 import Foundation
 
+protocol ProviderSelectorDelegate: class {
+    func providerWasSelected(_ provider: Provider)
+}
+
 protocol ProviderSelectorViewProtocol: class {
     func show(providers: [Provider])
 }
@@ -19,7 +23,9 @@ class ProviderSelectorPresenter {
     var result: Bool = false
     
     weak var view: ProviderSelectorViewProtocol?
-
+    var delegate: ProviderSelectorDelegate?
+    var categoryId: Int?
+    
     init(view: ProviderSelectorViewProtocol?) {
         self.view = view
     }
@@ -28,8 +34,8 @@ class ProviderSelectorPresenter {
 extension ProviderSelectorPresenter: SelectorPresenterProtocol {
 
     func fetchData() {
-        // Aqui en categoryId deberíamos pasar el id de la categoria seleccionada
-        repository.getProviders(categoryId: 1) { (result, providers, error) in
+       guard let categoryId = categoryId else { return }
+        repository.getProviders(categoryId: categoryId) { (result, providers, error) in
             if (result) {
                 self.providers = providers ?? []
                 self.view?.show(providers: providers ?? [])
@@ -42,6 +48,6 @@ extension ProviderSelectorPresenter: SelectorPresenterProtocol {
 
     func elementSelected(at index: Int) {
         let selectedProvider = providers[index]
-        print(selectedProvider.name)
+        delegate?.providerWasSelected(selectedProvider)
     }
 }

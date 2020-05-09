@@ -58,6 +58,7 @@ extension SelectorViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let row = indexPath.row
         presenter?.elementSelected(at: row)
+        navigationController?.popViewController(animated: true)
     }
 }
 
@@ -66,7 +67,7 @@ extension SelectorViewController: AccountSelectorViewProtocol {
         let names = accounts.map { (account) -> String in
             return (account.name ?? "") + " - " + (account.currency?.symbol ?? "")
         }
-        
+    
         elements = names
         tableView?.reloadData()
     }

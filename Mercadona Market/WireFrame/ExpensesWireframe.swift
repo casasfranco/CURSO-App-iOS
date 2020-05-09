@@ -27,6 +27,6 @@ class ExpensesWireframe {
         let presenter = NewExpensePresenter(view: newExpenseVC)
         newExpenseVC.presenter = presenter
         
-        context.navigationController?.pushViewController(newExpenseVC, animated: true)
+        context.navigationController?.setViewControllers([newExpenseVC], animated: true)
     }
 }
